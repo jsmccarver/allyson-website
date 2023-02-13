@@ -18,8 +18,8 @@ export default function Home() {
           <img className={styles.allysonFace} src={"/allyson-face.png"}></img>
           <h2>welcome to my website :3</h2>
           <h3 className={styles.description}>
-            i like cats, ttrpg's, dice, painting miniatures, video games and
-            maps!
+            i like cats, ttrpg&apos;s, dice, painting miniatures, video games
+            and maps!
           </h3>
           <p>icon picrew by: 16xmin</p>
         </div>

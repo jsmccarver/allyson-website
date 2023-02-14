@@ -28,14 +28,13 @@ export default function Home() {
         >
           <div className={styles.menuHeader}>
             <h2>menu!</h2>
-            <div
+            <img
+              src={"/close-button.svg"}
               className={styles.cancelButton}
               onClick={() => {
                 setMenuOpen(false);
               }}
-            >
-              hello
-            </div>
+            />
           </div>
           <div>my cats!</div>
           <div>ttrpg stuff!</div>

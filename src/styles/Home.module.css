@@ -8,6 +8,57 @@
   background-color: #ffafcc;
   padding-bottom: 0.5rem;
   height: 6rem;
+  text-align: center;
+}
+
+.hamburger {
+  position: absolute;
+  top: 7.5rem;
+  left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem 0rem;
+  border: 1px transparent solid;
+}
+
+.hamburger:hover {
+  border-color: blue;
+}
+
+.hamburger div {
+  height: 0.4375rem;
+  width: 3.875rem;
+  background-color: #ffc8dd;
+  border-radius: 1.5rem;
+}
+
+.menu {
+  position: absolute;
+  height: calc(100% - 6.5rem);
+  background-color: #a2d2ff;
+  top: 6.5rem;
+  left: -12rem;
+  transition: left 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.menuOpen {
+  left: 0rem;
+  overflow-y: hidden;
+  transition: left 0.5s ease-in-out;
+}
+
+.menuClosed {
+  left: 15rem;
+}
+
+.menuHeader {
+  display: flex;
+  align-items: space-between;
+}
+
+.cancelButton {
+  background: blue;
 }
 
 .bodyWrapper {
@@ -15,12 +66,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 1rem;
   flex: 1;
+  opacity: 1;
+}
+
+.bodyWrapperMenu {
+  opacity: 0.5;
 }
 
 .hello {
-  padding: 0 1.5rem;
+  padding-top: 1rem;
 }
 
 .allysonFace {
@@ -31,4 +88,21 @@
 
 .description {
   max-width: 50rem;
+}
+
+@media (max-width: 750px) {
+  .header h1 {
+    margin: 0 auto;
+    max-width: 15rem;
+  }
+
+  .allysonFace {
+    height: 200px;
+    width: 200px;
+  }
+
+  .hamburger {
+    top: 7.5rem;
+    left: 0.5rem;
+  }
 }

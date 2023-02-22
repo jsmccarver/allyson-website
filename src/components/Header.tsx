@@ -3,7 +3,7 @@ import classNames from "classnames";
 import Link from "next/link";
 import styles from "./header.module.css";
 
-export default function Header() {
+function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -90,3 +90,5 @@ export default function Header() {
     </>
   );
 }
+
+export default Header;

@@ -9,6 +9,9 @@ body {
   font-family: "Cherry Bomb", sans-serif;
   font-style: normal;
 }
+a {
+  text-decoration: none;
+}
 
 h1,
 h2,
